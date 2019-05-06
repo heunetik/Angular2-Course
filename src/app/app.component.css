@@ -1,0 +1,9 @@
+#content {
+    width: 30%;
+}
+
+@media screen and (max-width: 420px) {
+    #content {
+        width: 100%;
+    }
+}

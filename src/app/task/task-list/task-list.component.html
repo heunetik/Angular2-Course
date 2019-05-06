@@ -1,0 +1,8 @@
+<h4>Tasks:</h4>
+
+<ul>
+  <li class="list-item" *ngFor="let task of taskService.tasks">
+    <input class="big-checkbox" type="checkbox" [checked]="task.completed" (change)="task.completed = !task.completed" [disabled]="task.completed">
+    <span class="task-name" [class.completed]="task.completed">{{ task.title }}</span><span *ngIf="task.completed"> - &#x2714;</span>
+  </li>
+</ul>

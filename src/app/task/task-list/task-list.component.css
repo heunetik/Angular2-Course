@@ -1,0 +1,19 @@
+.completed {
+    color: green;
+}
+
+.list-item {
+    padding: 6px 0px;
+}
+
+.big-checkbox {
+    zoom:1.35;
+    transform:scale(1.35);
+    transform-origin:0 0;
+    vertical-align: middle;
+    margin-bottom: 8px;
+}
+
+.task-name {
+    margin-left: 6px;
+}

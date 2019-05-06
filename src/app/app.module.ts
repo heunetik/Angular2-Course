@@ -2,23 +2,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+// Components
 import { AppComponent } from './app.component';
-import { TasksComponent } from './tasks/tasks.component';
-import { TaskListComponent } from './task-list/task-list.component';
-import { TaskService } from './task.service';
-import { TaskNewComponent } from './task-new/task-new.component';
+
+// Services
+import { TaskService } from './task/services/task.service';
+
+// Modules
+import { TaskModule } from './task/task.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TasksComponent,
-    TaskListComponent,
-    TaskNewComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule,
+    FormsModule,
+    TaskModule
   ],
-  providers: [TaskService],
-  bootstrap: [AppComponent]
+  providers: [
+    TaskService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
